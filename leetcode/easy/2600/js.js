@@ -7,6 +7,8 @@
  */
 var kItemsWithMaximumSum = function (numOnes, numZeros, numNegOnes, k) {
   /**
+   * ✅
+   *
    * Time: O(1)
    * Space: O(1)
    */

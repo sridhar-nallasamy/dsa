@@ -4,6 +4,8 @@
  */
 var isPalindrome = function (x) {
   /**
+   * ✅
+   *
    * Time: O(logn)
    * Space: O(1)
    */

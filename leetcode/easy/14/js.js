@@ -4,7 +4,7 @@
  */
 var longestCommonPrefix = function (strs) {
   /**
-   * Time: O(nm log n)
+   * Time: O(n log n)
    * Space: O(m)
    *
    * where n is the length of the array &

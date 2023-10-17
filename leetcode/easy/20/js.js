@@ -8,6 +8,7 @@ var isValid = function (s) {
    * Space: O(n)
    *
    * where n is the length of s
+   * ✅
    */
   const bracketsMap = { '(': ')', '{': '}', '[': ']' };
   const stack = [];

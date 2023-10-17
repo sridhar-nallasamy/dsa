@@ -9,6 +9,7 @@ var longestCommonPrefix = function (strs) {
    *
    * where n is the length of the array &
    * m is the length of 1st word after sorting
+   * ✅
    */
   strs.sort();
   const leftWord = strs[0];

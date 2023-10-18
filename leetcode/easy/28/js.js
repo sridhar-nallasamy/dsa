@@ -9,6 +9,7 @@ var strStr = function (haystack, needle) {
    * Space: O(1)
    *
    * where m = haystack length & n = needle length
+   * ✅
    */
   let idx = 0;
   while (idx < haystack.length) {

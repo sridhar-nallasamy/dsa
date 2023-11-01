@@ -56,4 +56,26 @@ var deleteDuplicates = function (head) {
   return result;
 };
 
-printListNode(deleteDuplicates(prepareListNode([1, 1, 1, 1, 2, 3, 4, 4])));
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var deleteDuplicates1 = function (head) {
+  /**
+   * Time: O(n)
+   * Space: O(1)
+   * where n is the length of the ListNode
+   * ✅
+   */
+  let curr = head;
+  while (curr && curr.next) {
+    if (curr.val === curr.next.val) {
+      curr.next = curr.next.next;
+    } else {
+      curr = curr.next;
+    }
+  }
+  return head;
+};
+
+printListNode(deleteDuplicates1(prepareListNode([1, 1, 1, 1, 2, 3, 4, 4])));

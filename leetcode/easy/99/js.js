@@ -23,7 +23,7 @@ function recursion(root, arr) {
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal = function (root) {
+var inorderTraversalRec = function (root) {
   /**
    * Time: O(n)
    * Space: O(n)
@@ -32,4 +32,31 @@ var inorderTraversal = function (root) {
   const arr = [];
   recursion(root, arr);
   return arr;
+};
+
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ */
+var inorderTraversalItr = function (root) {
+  /**
+   * Time: O(n)
+   * Space: O(n)
+   * where n is the size of the tree
+   * ✅
+   */
+  const res = [];
+  const stack = [];
+  let node = root;
+  while (node || stack.length) {
+    if (node) {
+      stack.push(node);
+      node = node.left;
+    } else {
+      const stackedNode = stack.pop();
+      res.push(stackedNode.val);
+      node = stackedNode.right;
+    }
+  }
+  return res;
 };

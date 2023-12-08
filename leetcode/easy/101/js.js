@@ -13,6 +13,12 @@ class TreeNode {
  * @return {boolean}
  */
 var isSymmetric = function (root) {
+  /**
+   * Time: O(n)
+   * Space: O(n)
+   * where n is the number of nodes in the tree
+   * ✅
+   */
   if (!root) return true;
 
   const queue = [root.left, root.right];
